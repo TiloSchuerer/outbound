@@ -1,89 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Outbound Call</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-    <meta name="referrer" content="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url=https://tiloschuerer.github.io/outbound/call_outbound.html">
+    <title>Weiterleitung...</title>
 </head>
 <body>
-
-<div class="card" style="width: 100%; height: 100%">
-    <div class="card-content">
-        <div class="content">
-
-            <form method="POST" action="https://landlusthotel.de/dialog/call_outbound_backend.php?id=48156389451123" class="box">
-                <div class="field">
-                    <label class="label" for="telefonnummer">Telefonnummer:</label>
-                    <div class="control">
-                        <input class="input" type="text" id="telefonnummer" name="telefonnummer" placeholder="echte Rufnummer" required>
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label class="label" for="kunden_name">Name des Kunden:</label>
-                    <div class="control">
-                        <input class="input" type="text" id="kunden_name" name="kunden_name" placeholder="Demo Name" required>
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label class="label" for="anrufgrund">Anrufgrund:</label>
-                    <div class="control">
-                        <div class="select">
-                            <select id="anrufgrund" name="anrufgrund" required>
-                                <option value="3ds">3DS Abbruch</option>
-                                <option value="kartenpruefnummer">Kartenprüfnummer falsch</option>
-                                <option value="pin">PIN falsch</option>
-                                <option value="limit">Limit überschritten</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label class="label" for="email">eMail Adresse:</label>
-                    <div class="control">
-                        <input class="input" type="text" id="email" name="email" placeholder="eMail Adresse, falls das Transkript des Calls geschickt werden soll">
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="control">
-                        <button class="button is-primary" type="submit" >Absenden</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<div class="card" style="width: 100%; height: 100%">
-    <div class="card-content">
-        <div class="content">
-            <h1>Anmerkungen</h1>
-            <div>
-                <ul>
-                    <li>Dies ist eine Demoseite für einen Outbound-KI-Agenten.</li>
-                    <li>Nach Click auf "Absenden" werden Sie von der Rufnummer 03075669270 angerufen.</li>
-                    <li>Die Kartenprüfnummer falsch, Anrufgründe PIN falsch und Limit sind nur redimentär implementiert.</li>
-                    <li>Der Anrufgrund 3DS Abbruch ist gemäß dem aktuellen Servicecall-Leitfaden implementiert.
-                        Wenn man bestätigt, dass man OnlineBanking-Zugang hat, wird der gesamte Leitfaden Schritt für Schritt
-                        durchgesprochen einschließlich Biometrie-Freischaltung. Wenn man sagt, dass man keinen OnlineBanking-Zugang
-                        hat, wird entgegen dem Leitfaden mangels Datenzugriff keine Adressprüfung durchgeführt sondern sofort
-                        der erneute Versand der OnlineBanking-Unterlagen zugesagt.</li>
-                    <li>Der Outbound-Agent kann damit umgehen, dass nicht der gewünschte Kunde ans Telefon gegangen ist oder erst herbei geholt werden muss.</li>
-                    <li>Der Outbound-Agent kann mit einem Anrufbeantworter umgehen und hinterlässt eine Rückrufbitte.
-                        Wenn man dann später die Rufnummer 03075669270 zurück ruft, weiß der Agent, dass er den Kunden
-                        zuvor im Outbound angerufen hat. Er validiert den Namen des Anrufers und fährt dann im Inbound Gespräch
-                        mit dem Wissen um den Anrufgrund des Outbound Calls gemäß Outbound Script fort.</li>
-                    <li>Wenn der Angerufene eine Person sprechen möchte, leitet der Outbound-Agent an Tilo Schürer weiter.
-                        Aktuell ist ein Warm Handover mit 3-Way-Summary implementiert. D.h. der Agent fasst das bisherige Gespräch
-                        zusammen und sowohl der angerufene Kunde als auch Tilo Schürer hören diese Zusammenfassung.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+<p>... falls Weiterleitung nicht erfolgreich: <a href="https://tiloschuerer.github.io/outbound/call_outbound.html">klicke hier</a>.</p>
 </body>
 </html>
