@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Outbound Call</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-<meta name="referrer" content="no-referrer" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Outbound Call</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <meta name="referrer" content="no-referrer" />
 </head>
 <body>
 
@@ -13,7 +13,7 @@
     <div class="card-content">
         <div class="content">
 
-            <form method="POST" action="https://landlusthotel.de/dialog/call_outgoing_backend.php?id=48156389451123" class="box">
+            <form method="POST" action="https://landlusthotel.de/dialog/call_outbound_backend.php?id=48156389451123" class="box">
                 <div class="field">
                     <label class="label" for="telefonnummer">Telefonnummer:</label>
                     <div class="control">
@@ -42,6 +42,12 @@
                     </div>
                 </div>
 
+                <div class="field">
+                    <label class="label" for="email">eMail Adresse:</label>
+                    <div class="control">
+                        <input class="input" type="text" id="email" name="email" placeholder="eMail Adresse, falls das Transkript des Calls geschickt werden soll">
+                    </div>
+                </div>
                 <div class="field">
                     <div class="control">
                         <button class="button is-primary" type="submit" >Absenden</button>
@@ -79,3 +85,5 @@
 </div>
 </body>
 </html>
+
+
