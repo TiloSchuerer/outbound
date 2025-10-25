@@ -14,17 +14,37 @@
         <div class="content">
 
             <form method="POST" action="https://landlusthotel.de/dialog/call_outbound_backend.php?id=48156389451123" class="box">
+
                 <div class="field">
-                    <label class="label" for="telefonnummer">Telefonnummer:</label>
+                    <label class="label" for="anrede">Anrede des Kunden:</label>
                     <div class="control">
-                        <input class="input" type="text" id="telefonnummer" name="telefonnummer" placeholder="echte Rufnummer" required>
+                        <div class="select">
+                            <select id="anrede" name="anrede" required>
+                                <option value="Frau">Frau</option>
+                                <option value="Herr">Herr</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
 
                 <div class="field">
-                    <label class="label" for="kunden_name">Name des Kunden:</label>
+                    <label class="label" for="vorname">Vorname des Kunden:</label>
                     <div class="control">
-                        <input class="input" type="text" id="kunden_name" name="kunden_name" placeholder="Demo Name" required>
+                        <input class="input" type="text" id="vorname" name="vorname" placeholder="Demo Vorname" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="nachname">Nachname des Kunden:</label>
+                    <div class="control">
+                        <input class="input" type="text" id="nachname" name="nachname" placeholder="Demo Nachname" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="telefonnummer">Telefonnummer:</label>
+                    <div class="control">
+                        <input class="input" type="text" id="telefonnummer" name="telefonnummer" placeholder="echte Rufnummer" required>
                     </div>
                 </div>
 
