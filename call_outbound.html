@@ -101,11 +101,16 @@
                     <li>Wenn der Angerufene eine Person sprechen möchte, leitet der Outbound-Agent an Tilo Schürer weiter.
                         Aktuell ist ein Warm Handover mit 3-Way-Summary implementiert. D.h. der Agent fasst das bisherige Gespräch
                         zusammen und sowohl der angerufene Kunde als auch Tilo Schürer hören diese Zusammenfassung.</li>
-                 </ul>
+                    <li>Wenn der Angerufene nicht ans Telefon gegangen ist und später die ihm unbekannte Nummer zurückruft,
+                        meldet sich ein Inbound-KI Agent, der nahezu den gleichen Prompt wie der Outbound KI-Agent hat
+                        (Änderung: vielen Dank für Ihren Rückruf. Ablehnung war nicht vor wenigen Minuten sondern kürzlich).
+                        Der Inbound KI-Agent sieht in der Datenbank, dass die anrufende Nummer zuvor im Outbound angerufen wurde und
+                        setzt das Outbound-Gespräch fort, indem er um die Bestätigung des Kundennamen bittet und da der Outbound-Anrufgrund
+                        bekannt ist, kann der Inbound KI-Agent sofort das korrekte Gespräch führen.</li>
+                    </ul>
             </div>
         </div>
     </div>
 </div>
 </body>
 </html>
-
